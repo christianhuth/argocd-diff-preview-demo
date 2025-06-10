@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     path: charts/kubedoom
-    repoURL: https://https://github.com/christianhuth/argocd-diff-preview-demo.git
+    repoURL: https://github.com/christianhuth/argocd-diff-preview-demo.git
     targetRevision: main
   syncPolicy:
     automated:
