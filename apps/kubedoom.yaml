@@ -1,0 +1,21 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kubedoom
+  namespace: argocd
+spec:
+  destination:
+    namespace: kubedoom
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: charts/kubedoom
+    repoURL: https://https://github.com/christianhuth/argocd-diff-preview-demo.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - Validate=true
