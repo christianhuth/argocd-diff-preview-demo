@@ -1,0 +1,8 @@
+---
+apiVersion: v2
+name: kubedoom
+version: 1.0.0
+dependencies:
+  - name: kubedoom
+    repository: https://charts.christianhuth.de
+    version: 1.0.0
